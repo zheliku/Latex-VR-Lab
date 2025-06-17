@@ -1,0 +1,74 @@
+% --------------------------------------------------
+% part 1：引用格式模板
+\documentclass[runningheads]{llncs} % 选择文档类型，这里是Springer的llncs模板
+
+\usepackage[T1]{fontenc} % 设置字体编码，保证特殊字符正常显示:
+
+\usepackage[UTF8]{ctex} % 中文支持
+
+\usepackage{graphicx} % 插入图片所需的宏包
+% --------------------------------------------------
+
+\begin{document}
+
+% --------------------------------------------------
+% part 2：标题、作者、联系方式等内容
+
+% 作者信息，包括作者名、机构、ORCID等
+\author{First Author\inst{1}\orcidID{0000-1111-2222-3333} \and
+Second Author\inst{2,3}\orcidID{1111-2222-3333-4444} \and
+Third Author\inst{3}\orcidID{2222--3333-4444-5555}}
+
+\authorrunning{F. Author et al.} % 文章页眉显示的作者名
+
+% 机构信息和联系方式
+\institute{Princeton University, Princeton NJ 08544, USA \and
+Springer Heidelberg, Tiergartenstr. 17, 69121 Heidelberg, Germany
+\email{lncs@springer.com}\\
+\url{http://www.springer.com/gp/computer-science/lncs} \and
+ABC Institute, Rupert-Karls-University Heidelberg, Heidelberg, Germany\\
+\email{\{abc,lncs\}@uni-heidelberg.de}}
+
+\maketitle % 生成标题、作者、机构等信息
+% --------------------------------------------------
+
+
+% --------------------------------------------------% part 3：摘要和关键词
+\begin{abstract} % 摘要部分，简要介绍论文内容
+The abstract should briefly summarize the contents of the paper in
+150--250 words.
+
+\keywords{First keyword  \and Second keyword \and Another keyword.} % 关键词
+\end{abstract}
+% --------------------------------------------------
+
+
+% --------------------------------------------------
+% part 4：引入章节内容
+% 引入各个章节的内容，这些章节内容存放在sections目录下
+% 每个章节的内容都在一个单独的.tex文件中
+% 每个人编辑自己负责的章节，便于管理和修改
+% 编译时，LaTeX 会自动将这些章节合并成一个完整的文档
+\input{sections/1-introduction.tex} % 引入第一章：引言
+
+\input{sections/2-related_work.tex} % 引入第二章：相关工作
+
+\input{sections/3-method.tex} % 引入第三章：方法
+
+\input{sections/4-user_study.tex} % 引入第四章：用户研究
+
+\input{sections/5-result.tex} % 引入第五章：结果
+
+\input{sections/6-conclusion.tex} % 引入第六章：结论
+% --------------------------------------------------
+
+% --------------------------------------------------
+% part 5：参考文献
+% 设置参考文献格式
+\bibliographystyle{splncs04}
+
+% 引用参考文献数据库
+\bibliography{mybibliography}
+% --------------------------------------------------
+
+\end{document} % 文档结束
