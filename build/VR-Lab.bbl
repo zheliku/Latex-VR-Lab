@@ -3,6 +3,9 @@
 \providecommand{\urlprefix}{URL }
 \providecommand{\doi}[1]{https://doi.org/#1}
 
+\bibitem{hjalmarsson1996dea}
+Hjalmarsson, L., Kumbhakar, S.C., Heshmati, A.: Dea, dfa and sfa: a comparison. Journal of Productivity Analysis  \textbf{7},  303--327 (1996)
+
 \bibitem{luo2020dream}
 Luo, T., Zhang, M., Pan, Z., Li, Z., Cai, N., Miao, J., Chen, Y., Xu, M.: Dream-experiment: a mr user interface with natural multi-channel interaction for virtual experiments. IEEE Transactions on Visualization and Computer Graphics  \textbf{26}(12),  3524--3534 (2020)
 
